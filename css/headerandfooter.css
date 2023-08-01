@@ -3,14 +3,11 @@ div.head-bar{
     justify-content: space-between;
     background-color: #285ca0 ;
     color: white;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
-    right: 0;
-    left: 0;
     width: 100%;
-    max-width: 100%;
-    min-height: 50px;
     flex-wrap: wrap;
+    height: 70px;
 }   
 div.logo{
     width: 30%;

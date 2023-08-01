@@ -1,4 +1,4 @@
-/* @media screen and (max-width:875px){
+@media(max-width:875px){
     div.head-bar{   
         justify-content: space-between;
         align-items: center;
@@ -63,8 +63,11 @@
     }
     
 }
-     */
-@media screen and (max-width:500px){
+    
+@media(max-width:500px){
+    .head-bar {
+        width: 100%;
+    }
     div.logo{
         width: 100%;
     }

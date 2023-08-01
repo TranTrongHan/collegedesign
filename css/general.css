@@ -6,14 +6,12 @@
    
 }
 html{
+    
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-}
-body{
-    width: fit-content;
 }
 .flex{
     display: flex;

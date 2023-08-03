@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: inherit;
+    
     text-decoration: none;
    
 }
@@ -21,7 +21,6 @@ img{
 }
 a{
     text-decoration: none !important;
-    color: inherit !important;
 }
 .hover-underline-animation {
     display: inline-block;

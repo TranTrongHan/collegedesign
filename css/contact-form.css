@@ -37,7 +37,7 @@ form > button{
     outline: none;
     cursor: pointer;
 }
-div.modal-container{
+div.modal-error-container, div.modal-succes-container{
     background-color:rgba(55,37,113,0.8);
     position: fixed;
     top: 0;
@@ -48,7 +48,7 @@ div.modal-container{
     margin-top: 50px; */
 
 }
-div.modal-form{
+div.modal-form, div.modal-succes-form {
     outline: none;
     width: 50%;
     margin: 8% auto;
@@ -76,11 +76,45 @@ div.formModal-body{
     height: 40%;
     padding-top: 50px;
 }
-div.formModal-body h3,p{
+div.formModal-body h3,p, div.succes-form-body h3,p{
     text-align: center;
 }
-
 .display{
     display: none;
+}
+div.succes-form-header{
+    position: relative;;
+    height: 60%;
+    background-color: #1f2251;
+}
+div.path{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 75px;
+    width: 20%;
+    margin: 0 auto;
+}
+div.close-tag-2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+div.path > i{
+    color: #fff;
+    font-size: 3em;
+    
+    top: 80px;
+    background: red;
+    border-radius: 60px;
+}
+div.succes-form-body{
+    background-color: antiquewhite;
+    height: 40%;
+    padding-top: 50px;
 }
 

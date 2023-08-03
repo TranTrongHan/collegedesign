@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/reponsive.css">
     <script src="javascript/index.js" defer></script>
     <script src="javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </head>
 <body>  
     <div class="gototop">
         <a id="gototop" href="javascript:;">GO TO TOP</a>
     </div>
     <header id="myHeader">
-        <div class="flex head-bar" id="myheadbar">
+        <div class="head-bar" id="myheadbar">
             <div class="logo">
                 <img src="images/Logo (1).png" alt="OU"> 
             </div>
-            <div class="aside-logo flex">
+            <div class="aside-logo">
                 <a href="#">Giới thiệu</a>
                 <a href="#">Phòng - cơ sở</a>
                 <a href="#">Khoa - Ban</a>
@@ -33,26 +36,51 @@
             </div>
         </div>
     </header>
-    <section aria-label="Newest Photos" >
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev"></button>
-            <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="images/thuongbinhlietsi.jpg" alt="image">
-                </li>
-                <li class="slide">
-                    <img src="images/thuongbinhlietsi.jpg" alt="image">
-                </li>
-                <li class="slide">
-                    <img src="images/certificate.jpg" alt="image">
-                </li>
-                <li class="slide">
-                    <img src="images/cafeteria.png" alt="image">
-                </li>
-            </ul>
+    <section class="banner">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" data-interval="1000" ride="true">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img 
+                    src="/collegedesign/carouselimg/thuongbinhlietsi.jpg"  class="d-block w-100"
+                    style="height: 355px;width: 650px; padding-top: 30px;"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img src="/collegedesign/carouselimg/tintuc.jpg"  class="d-block w-100"
+                    style="height: 355px;width: 650px; padding-top: 30px;"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img src="/collegedesign/carouselimg/carousel3.jpg"  class="d-block w-100"
+                    style="padding-top: 50px;"
+                    >
+                </div>
+                <div class="carousel-item">
+                    <img src="/collegedesign/carouselimg/carousel4.jpg"  class="d-block w-100"
+                    style="padding-top: 50px;"
+                    >
+                </div>
+                
+            </div>
+        
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
     </section>
+
     <section class="first-sec">
         <div class="first-sec-container flex ">
             <div class="hero-container">
@@ -65,88 +93,73 @@
     </section>
     <section class="third-sec">
         <div class="third-sec-container">
-                <div class="row1 flex">
-                    <h1>Tin tức &amp; Sự kiện nổi bật</h1>
-                    <div class="right-row1">
-                        <a>Xem toàn bộ tin tức &amp; sự kiện</a>
-                        <button>
-                            button here
-                        </button>
-                    </div>
+            <div class="row1-thirdsec-container">
+                <div class="row1-left">
+                    <p style="font-size: 2rem; font-weight: 700;">Tin tức &ndash; sự kiện nổi bật</p>
                 </div>
-                <div class="row2 flex">
-                    <div class="left-content flex">
-                        <div class="left-image">
-                            <a href="#"><img src="images/tuyen_sinh_2023-new.png" alt=""></a>
-                        </div>
-                        <div class="content flex">
-                            <span style="color: #d72314;">Tin tức</span>
-                            <a href="#"><p>Nội dung</p></a>
-                        </div>
-                    </div>
-                    <div class="right-content ">
-                        
-                        <div class="news-contain-1 flex">
-                            <div class="news-img">
-                                <a href="#"><img src="images/hoatdongsinhvien.jpg" alt=""></a>
-                            </div>
-                            <div class="news-text">
-                                <span>Hoạt động sinh viên</span>
-                                <a href="#"><p>Sáng ngày 9/7, tại cơ sở 97 Võ Văn Tần, Trường Đại học Mở Thành phố Hồ Chí Minh phối hợp cùng các doanh nghiệp tổ chức Ngày hội việc…</p></a>
-                            </div>
-                        </div>
-
-                        <div class="news-contain-2 flex">
-                            <div class="news-img">
-                                <a href="#"><img src="images/hoatdongsinhvien2.jpg" alt=""></a>
-                            </div>
-                            <div class="news-text">
-                                <span>Hoạt động sinh viên</span>
-                                <a href="#"><p>Nhằm khích lệ tinh thần học tập và rèn luyện của sinh viên, giúp sinh...</p></a>
-                            </div>
-                        </div>
-
-                        <div class="news-contain-3 flex">
-                            <div class="news-img">
-                                <a href="#"><img src="images/tintuc.jpg" alt=""></a>
-                            </div>
-                            <div class="news-text">
-                                <span>Tin tức</span>
-                                <a href="#"><p>Căn cứ Đề án thành lập “Trung tâm nghiên cứu và đổi mới giáo dục”...</p></a>
-                            </div>
-                        </div>
+                <div class="row1-right">
+                    <p>Xem toàn bộ tin tức &ndash; sự kiện</p>
+                    <button>></button>
                 </div>
             </div>
-                <div class="row3 flex">
-                    <div class="left-row3">
-                        <div class="row3-image">
-                            <a href="#"><img src="images/tuyen_sinh_2023-new.png" alt=""></a>
-                        </div>
-                        <div class="row3-content">
-                            <span style="color: #d72314;">Tin tức</span>
-                            <a href="#"><p>Nội dung</p></a>
-                        </div>
+            <div class="row2-thirdsec-container">
+                <div class="row2-left">
+                    <div class="left-theme-image">
+                        <a href="#"><img src="/collegedesign/images/tuyen_sinh_2023-new.png" alt="tuyensinh2023"></a>
                     </div>
-                    <div class="middle-row3">
-                        <div class="row3-image">
-                            <a href="#"><img src="images/tuyen_sinh_2023-new.png" alt=""></a>
-                        </div>
-                        <div class="row3-content ">
-                            <span style="color: #d72314;">Tin tức</span>
-                            <a href="#"><p>Nội dung</p></a>
-                        </div>
-                    </div>
-                    <div class="right-row3">
-                        <div class="row3-image">
-                            <a href="#"><img src="images/tuyen_sinh_2023-new.png" alt=""></a>
-                        </div>
-                        <div class="row3-content ">
-                            <span style="color: #d72314;">Tin tức</span>
-                            <a href="#"><p>Nội dung</p></a>
-                        </div>
+                    <div class="left-content">
+                        <div><p style="color: #d72134;font-size: 1.5rem; font-weight: 600;width: max-content;">Tuyển sinh</p></div>
+                        <div><a href="#" style="color: inherit !important; cursor: pointer;font-size: 1.5rem;font-weight: 500;">Thông báo nhận hồ sơ xét tuyển theo Đề án tuyển sinh riêng (Học bạ) năm 2023</a></div>
                     </div>
                 </div>
+                <div class="row2-right">
+                    <div class="one_of_right-news">
+                        <div class="right-theme-image">
+                            <a href="#"><img src="/collegedesign/images/muahexanh_hoatdongsinhvien.jpg" alt=""></a>
+                        </div>
+                        <div class="right-content">
+                            <div><p>Hoạt động sinh viên</p></div>
+                            <div><a href="#">Các hoạt động phục vụ cộng đồng trong chiến dịch tình nguyện Mùa Hè Xanh 2023</a></div>
+                        </div>
+                    </div>
+
+                    <div class="one_of_right-news">
+                        <div class="right-theme-image">
+                            <a href="#"><img src="/collegedesign/images/94nam.jpg" alt="94namkiniem"></a>
+                        </div>
+                        <div class="right-content">
+                            <div><p>Tin tức</p></div>
+                            <div><a href="#">
+                                Trường Đại học Mở Thành phố Hồ Chí Minh chúc mừng 94 năm ngày thành lập công đoàn Việt Nam (28/7/1929 - 28/7/2023)</a></div>
+                             </div>
+                    </div>
+
+                    <div class="one_of_right-news">
+                        <div class="right-theme-image">
+                            <a href="#"><img src="/collegedesign/images/chiendichmhx.jpg" alt="chiendich"></a>
+                        </div>
+                        <div class="right-content">
+                            <div><p>Hoạt động sinh viên</p></div>
+                            <div><a href="#">Chiến dịch tình nguyện Mùa Hè Xanh 2023 mặt trận tỉnh Kon Tum</a></div>
+                        </div>
+                    </div>
+
+                    <div class="one_of_right-news"> 
+                        <div class="right-theme-image">
+                            <a href="#"><img src="/collegedesign/images/cuocthihocthuat.jpg" alt="hocthuat"></a>
+                        </div>
+                        <div class="right-content">
+                            <div><p>Hoạt động sinh viên</p></div>
+                            <div><a href="#">Vòng chung kết cuộc thi học thuật “Logprime 2023”</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row3-thirdsec"></div>
         </div>
+
+    
     </section>
     <secion class="fourth-sec">
         <div class="fourth-sec-container">

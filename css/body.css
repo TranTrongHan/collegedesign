@@ -37,7 +37,6 @@ h1.hero-title{
     left: 50px;
     gap: 10px;
     width: 100%;
-    
 }
 .hero-title::before{
     content: "";

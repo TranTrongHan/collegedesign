@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/headerandfooter.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <header id="myHeader">
@@ -23,7 +26,48 @@
             </div>
         </div>
     </header>
-    <section></section>
+    <section>
+        <div class="form-container">
+            <form >
+                <input type="text" id="name" placeholder="Your name..." >
+                <input type="email" id="email" placeholder="Your email..." required>
+                <input type="text" id="phone" placeholder="Your phone..." >
+                <textarea  id="message" cols="30" rows="10" placeholder="Help...."></textarea>
+                <label for="">You are</label>
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <button class="submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="modal-error-container display" id="modalID">
+            <div class="modal-form">
+                <div class="formModal-header">
+                    <div><img src="/collegedesign/images/submit_failed.png" alt=""></div>
+                    <div class="close-tag" style="color: #fff; font-size: 1.5rem;">X</div>
+                </div>
+                <div class="formModal-body">
+                    <h3 style="font-size: 2.5rem;font-weight: 700;color: #1f2251;">Gui that bai</h3>   
+                    <p style="padding-top: 20px;font-size: 1.1rem; color: #2d334d;">Email cannot be empty</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-succes-container display">
+            <div class="modal-succes-form">
+                    <div class="succes-form-header">
+                        <div class="path"><i class="fa-solid fa-check"></i></div>
+                        <div class="close-tag-2" style="color: #fff; font-size: 1.5rem;">X</div>
+                    </div>
+                    <div class="succes-form-body">
+                        <h3 style="font-size: 2.5rem;font-weight: 700;color: #1f2251;">Gui thanh cong</h3>   
+                        <p style="padding-top: 20px;font-size: 1.1rem; color: #2d334d;">Thông tin của bạn được gửi đi thành công. Chúng tôi sẽ sớm liên hệ bạn</p>
+                    </div>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="footer-container">
             <div class="first-site-container">
@@ -92,4 +136,5 @@
         </div>   
     </footer>
 </body>
+<script src="./javascript/index2.js"></script>
 </html>

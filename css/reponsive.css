@@ -1,80 +1,51 @@
-/* @media screen and (max-width:875px){
-    div.head-bar{   
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #285ca0 ;
-        color: white;
-        position: fixed;
+@media(max-width:500px){
+    div.head-bar{
+        width: 100%;
         top: 0;
-        max-width: 100%;
-        min-height: 200px;
-    }  
-    div.aside-logo > ul > li > a{
-        color: white;
+        min-height: 300px;
         display: block;
-        padding: 0 15px 20px 0;
+    }
+    div.logo{
+        width: 90%;
+        display: block;
+    }
+    div.aside-logo{
+        width: 100%;
+        height: fit-content;
+        gap: 0;
         
-        margin-top: 13px;
     }
-    .first-sec{
-        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/background.jpg );
-        background-position: center;
-        background-size: cover;
-        min-height: 400px
+    div.aside-logo > a{
+        width: 100%;
+        font-size: 1rem;
+        padding: 5px;
     }
-
+    
     h1.hero-title{
         gap: 15px;
         display: flex;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 30px;
         color: white;
     }
-
-    div.fifth-sec-container{
-        background-color: #f5f6fc;
-        box-sizing: border-box;
-        height: fit-content;  
-        width: fit-content; 
-        padding: 10px;
+    div.row1{
+        display: block;
     }
-    footer{
-        background-color: #010433;
-        min-height: 115vh;
-        padding: 20px 15px 20px 15px;
+    div.row1 > h1{
+       font-size: 2.3rem;
+        
+    }
+    div.right-row1{
         width: 100%;
-       
     }
-    div.first-site-container{
-        border-bottom: 1px solid darkgray;
-        padding-bottom: 75px;  
-        flex-wrap: wrap;
-        min-height: 150px;
+    div.right-row1 > a{
+        font-size: 1.5rem;
     }
-    div.first-site-col, div.second-site-col{
-        width: auto;
-    }
-    div.second-site-container{
-        border-bottom: 1px solid darkgray;
-        padding: 25px 15px 10px 15px;
-        flex-wrap: wrap;
-        min-height: 330px;
-    }
-    
+   
 }
-     */
-@media screen and (max-width:500px){
-    div.logo{
-        width: 100%;
-    }
-    div.aside-logo{
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    div.aside-logo a{
-        font-size: 1rem;
-        line-height: 2rem;
+
+@media(min-width:700px){
+    div.head-bar{
+       min-height: 100px;
     }
 }

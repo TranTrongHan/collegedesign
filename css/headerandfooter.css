@@ -1,28 +1,33 @@
 
 div.head-bar{   
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #285ca0 ;
-    color: white;
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
     width: 100%;
-    max-width: 100%;
-    min-height: 50px;
-    flex-wrap: wrap;
+    height: 70px;
+    
 }   
 div.logo{
     width: 30%;
     display: flex;
-    align-items: center;
+    
 }
 div.aside-logo{
+    display: flex;
     width: 70%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-
+div.aside-logo > a{
+    color: #fff ;
+    font-size: 25px;
+    display: block;
+    min-height: 1rem;
+}
    
 
 /* FOOTER */
@@ -33,7 +38,7 @@ footer{
 }
 div.footer-container{
     width: 100%;
-    margin: 0 auto;
+    
 }
 div.first-site-container{
     border-bottom: 1px solid darkgray;

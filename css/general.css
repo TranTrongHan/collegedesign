@@ -1,19 +1,17 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: inherit;
+    
     text-decoration: none;
    
 }
 html{
+    
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-}
-body{
-    width: fit-content;
 }
 .flex{
     display: flex;
@@ -23,7 +21,6 @@ img{
 }
 a{
     text-decoration: none !important;
-    color: inherit !important;
 }
 .hover-underline-animation {
     display: inline-block;

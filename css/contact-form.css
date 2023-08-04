@@ -1,0 +1,120 @@
+div.form-container{
+    width: 100%;
+    height: 120vh;
+    background: #1f2251;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+form input,textarea,select
+{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #fff;
+    font-size: 15px;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+form > button{
+    padding: 15px;
+    background-color:chocolate;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+div.modal-error-container, div.modal-succes-container{
+    background-color:rgba(55,37,113,0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 50vh;
+    margin-top: 50px; */
+
+}
+div.modal-form, div.modal-succes-form {
+    outline: none;
+    width: 50%;
+    margin: 8% auto;
+    height: 70vh;
+}
+div.formModal-header{
+    position: relative;;
+    height: 60%;
+    background-color: #d72134;
+}
+div.close-tag{
+    position: absolute;
+    top:-40px;
+    right: -95px;
+    cursor: pointer;
+}
+div.formModal-header div{
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+div.formModal-body{
+    background-color: antiquewhite;
+    height: 40%;
+    padding-top: 50px;
+}
+div.formModal-body h3,p, div.succes-form-body h3,p{
+    text-align: center;
+}
+.display{
+    display: none;
+}
+div.succes-form-header{
+    position: relative;;
+    height: 60%;
+    background-color: #1f2251;
+}
+div.path{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 75px;
+    width: 20%;
+    margin: 0 auto;
+}
+div.close-tag-2{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+div.path > i{
+    color: #fff;
+    font-size: 3em;
+    
+    top: 80px;
+    background: red;
+    border-radius: 60px;
+}
+div.succes-form-body{
+    background-color: antiquewhite;
+    height: 40%;
+    padding-top: 50px;
+}
+

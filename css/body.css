@@ -314,11 +314,10 @@ div.fifth-sec-body{
     gap: 30px;
 }
 .fifth-sec a:hover{
-    color: #199cda;
+    color: #107daf;
 }
 div.group-container{
     height: fit-content;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     gap: 20px;

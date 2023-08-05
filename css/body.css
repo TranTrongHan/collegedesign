@@ -313,6 +313,9 @@ div.fifth-sec-body{
     flex-direction: column;
     gap: 30px;
 }
+.fifth-sec a:hover{
+    color: #199cda;
+}
 div.group-container{
     height: fit-content;
     /* border: 2px solid red; */

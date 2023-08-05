@@ -44,14 +44,19 @@ div.first-site-container{
     border-bottom: 1px solid darkgray;
 }
 div.first-site-col, div.second-site-col{
-    width: 25%;
+    width: 100%;
+    height: 70%;
 }
 div.first-site{
-    gap:10px;
     justify-content: space-around;
 }
-div.first-site img{
-    height: 75px;
+div.first-site-col img{
+    width: 80%;
+    height: 120%;
+}
+div.first-site > div:first-child > div:first-child > a > img{
+    width: 75% !important;
+    height: 115% !important;
 }
 div.second-site-container{
     border-bottom: 1px solid darkgray;
@@ -73,7 +78,7 @@ div.footer-content{
     line-height: 30px;
     color: #797a97;
     font-weight: 300;
-    min-height: 120px;
+    min-height: 10%;
 }
 div.third-site{
     justify-content: space-between;

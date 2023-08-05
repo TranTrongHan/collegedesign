@@ -16,14 +16,14 @@ div.first-sec-container{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/collegedesign/images/background.jpg );
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     
 }
 div.hero-container{
     width: 50%;
-    padding: 10px;
-    min-height: 50vh;
+    padding-top: 10px;
+    min-height: 25vh;
     position: relative;
 }
 h1.hero-title{
@@ -96,10 +96,7 @@ div.row1-right > p{
     margin-top: 12px;
     font-weight: 700;
 }
-div.row1-right{
-    display: flex;
-    align-items: center;
-}
+
 div.row1-right > div{
     margin-bottom: 3px;
 }

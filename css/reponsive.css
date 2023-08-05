@@ -4,6 +4,7 @@
         top: 0;
         min-height: 300px;
         display: block;
+        position: static;
     }
     div.logo{
         width: 90%;
@@ -19,6 +20,7 @@
         width: 100%;
         font-size: 1rem;
         padding: 5px;
+        padding-left: 10px;
     }
     
     h1.hero-title{
@@ -40,7 +42,56 @@
     }
     div.right-row1 > a{
         font-size: 1.5rem;
+        
     }
+    div.carousel{
+        width: 100%;
+    }
+    div.first-sec-container{
+        display: block;
+        height: fit-content;
+    }
+    div.hero-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    div.hero-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    h1.hero-title{
+        position: static;
+    }
+    div.hero-content > div{
+        position: static;
+    }
+    div.hero-content p{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    div.row1-thirdsec-container{
+        display: block;
+    }
+    div.row1-left{
+        width: 100%;
+    }
+    div.row1-right{
+        width: 100%;
+    }
+    div.row2-thirdsec-container{
+        display: block;
+    }
+    div.row2-left{
+        width: 100%;
+    }
+    div.row2-right-container{
+        width: 100%;
+        display: block;
+    }
+   
+    div.introduction > h1{
+        font-size: 2rem;
+    } 
    
 }
 

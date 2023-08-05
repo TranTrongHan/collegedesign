@@ -1,0 +1,37 @@
+.main{
+    background-color: transparent;
+    display: flex;
+    height:fit-content;
+}
+/* 80% */
+div.notificaitions-side{
+    width: 80%;
+    height: 200px;
+}
+div.notifytopnav{
+    height: 10%;
+    background-color: #07689f;
+}
+div.notify-content{
+    height: 90%;
+    background-color: transparent;
+}
+div.col1-notify-content{
+    width: 30%;
+}
+div.col2-notify-content{
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+/* 20% */
+div.login-side{
+    width: 20%;
+    height: 200px;
+}

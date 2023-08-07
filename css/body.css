@@ -352,4 +352,50 @@ div.major-link > a{
     font-weight: 400;
     font-size: 1em;
 }
-
+/* SIXTH SEC */
+section.sixth-sec{
+    height: 100vh;
+    width: 100%;
+    
+}
+div.sixth-sec-container > h2{
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+div.learn-gadget{
+    margin-top: 20px;
+}
+div.gadget{
+    width: 50%;
+    margin: 0 auto;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+   
+}
+div.gadget{
+    border: 1px solid lightgray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+div.gadget-image{
+    width: 20%;
+    padding: 10px;
+}
+div.gadget-image img{
+    border-radius: 10px;
+}
+div.gadget-link{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.gadget-link h3{
+    color: #05466b;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+div.gadget-link p{
+    font-size: 1.4rem;
+    font-weight: 600;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/general.css">
+    <style>
+        .feedback-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .feedback-container h2 {
+            text-align: center;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .feedback-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function submitFeedback() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Xử lý dữ liệu phản hồi ở đây, ví dụ: gửi đến máy chủ hoặc xử lý trong trang web
+
+            // Ví dụ: Gửi dữ liệu phản hồi đến máy chủ bằng AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "your-feedback-endpoint", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            var data = JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            });
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Xử lý kết quả phản hồi từ máy chủ (nếu cần)
+                    alert("Phản hồi đã được gửi thành công!");
+                }
+            };
+
+            xhr.send(data);
+        }
+    </script>
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Phản hồi học tập</h2>
+        <form class="feedback-form">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nội dung phản hồi:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" onclick=submitFeedback()>Gửi phản hồi</button>
+        </form>
+    </div>
+</body>
+</html>

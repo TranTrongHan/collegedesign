@@ -8,6 +8,8 @@ div.gototop > a{
     position: fixed;
     bottom: 15px;
     right: 15px;
+    cursor: pointer;
+    z-index: 98;
 }
 
 /* FIRST SECTION */
@@ -346,11 +348,19 @@ div.major{
 div.major-link{
     line-height: 30px;
 }
+
 div.major-link > a{
     display: block;
     color: inherit;
     font-weight: 400;
     font-size: 1em;
+    position: relative;
+}
+div.major-link > a > img{
+    position: absolute;
+    width: fit-content;
+    height: 20px;
+    top: 5px;
 }
 /* SIXTH SEC */
 section.sixth-sec{

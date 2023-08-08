@@ -15,13 +15,20 @@ form{
     max-width: 600px;
     border-radius: 10px;
 }
+form div {
+    display: flex;
+    gap: 5px;
+}
+form div input{
+    flex-grow: 1;
+}
 form input,textarea,select
 {
     border: 0;
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: #fff;
+    background-color: #f2f5ff;
     font-size: 15px;
 }
 label {

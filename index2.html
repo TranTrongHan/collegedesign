@@ -29,20 +29,18 @@
     <section>
         <div class="form-container">
             <form >
-                <input type="text" id="name" placeholder="Your name..." >
-                <input type="email" id="email" placeholder="Your email..." required>
-                <input type="text" id="phone" placeholder="Your phone..." >
-                <textarea  id="message" cols="30" rows="10" placeholder="Help...."></textarea>
-                <label for="">You are</label>
-                <select id="cars" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <button class="submit-btn" type="submit">Send</button>
+                <div>
+                    <input type="text" id="name" placeholder="Họ và tên" >
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+               
+                <input type="text" id="phone" placeholder="Số điện thoại" >
+                <textarea  id="message" cols="30" rows="10" placeholder="Câu hỏi của bạn"></textarea>
+               
+                <button class="submit-btn" type="submit" onclick="showSuccessModal()">Gửi</button>
             </form>
         </div>
+        
         <div class="modal-error-container display" id="modalID">
             <div class="modal-form">
                 <div class="formModal-header">

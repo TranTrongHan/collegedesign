@@ -4,55 +4,64 @@ header{
    
 }
 div.head-bar{   
-    width: 100%;
+    max-width: 100%;
+    min-width: fit-content;
     margin: auto;
     max-height: 70%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
     background-color: #285ca0 ;
 }   
 div.logo{
-    width: 30%;
+    max-width: 30%;
     display: flex;
     
 }
 div.logo img{
     object-fit: contain;
-    width: 100%;
+    max-width: 100%;
 }
-div.searchbar{
-    width: 70%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-}
-div.searchbar input[type=text] {
+.search-container {
     position: relative;
-    float: right;
-    padding: 6px;
+    width: 300px;
+ }
+  
+.search-input {
+    width: 100%;
+    padding: 10px;
     border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+  
+.search-input:focus {
     outline: none;
-    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
 }
-div.searchbar i{
+  
+  .search-button {
     position: absolute;
-    top: 32px;
-    right: 370px;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    border: none;
+    background-color: #86a5ce;
+    color: white;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
-}
-div.searchbar i:hover{
-    opacity: 0.5;
-    transition: opacity 0.3s ease-in-out;
-}
-div.searchbar i:active{
-   
-}
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #273f5f;
+  }
 div.sub-bar{
-    height: 30%;
+    min-height: 30%;
+    max-height: fit-content;
     background-color: #1455aa;
 }   
 div.dropdown-toggle{
@@ -95,6 +104,7 @@ div.dropdown-toggle{
 }
 .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: #0e315e;
+    transition: background-color 0.5s ease-in-out ;
 }
 .subnav-content {
     display: none;
@@ -112,6 +122,7 @@ div.dropdown-toggle{
 .subnav-content a:hover {
     background-color: #eee;
     color: red;
+    transition: color 0.3s ease-in;
 }
 .subnav:hover .subnav-content {
     display: block;

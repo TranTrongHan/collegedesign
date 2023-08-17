@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour</title>
+    <link rel="stylesheet" href="virtual.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/virtual-sidebar.js"></script>
+    <script src="/caro.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    
+</head>
+<body style="background-image: url(/images/anhbackgroudvirtour.png);">
+    <div class="l_navbar" id="navbar"> 
+         <div class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <img src="/images/Logo-DH-Mo-TPHCM-OU.webp" width="100px" alt="logo" class="nav_logo_icon" id="nav_logo_icon">
+                    <span class="nav_logo_text">VIRTUAL TOUR</span>
+                </a>
+                <div class="nav_toggle" id="nav_toggle">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <ul class="nav_list">
+                    <li style="background-color: aliceblue;">
+                    <a href="#" class="nav_link">
+                    <i class="fas fa-synagogue nav_icon_widget"></i>
+                    <span class="nav_text">CÁC KHU CHỨC NĂNG<i class="fa-solid fa-caret-down nav_icon"></i></span>
+                    </a>
+                    <ul class="sub_menu nav_list">
+                        <li data-image="/360_iframe/hoitruong0.jpg" id="hinh"><a href="#hoitruong" class="nav_link">
+                            <span class="nav_text">HỘI TRƯỜNG</span></a>
+                        </li>
+
+                        <li data-image="/360_iframe/thuvien4.jpg"><a href="#" class="nav_link">
+                            <span class="nav_text">KHÔNG GIAN CÔNG NGHỆ</span></a>
+                        </li>
+
+                        <li data-image="/360_iframe/thuvien0.jpg" data-carousel-index="0"><a href="#" class="nav_link">
+                            <span class="nav_text">THƯ VIỆN</span></a>
+                        </li>
+
+                        <li data-image="/360_iframe/coso3.webp"><a href="#" class="nav_link">
+                            <span class="nav_text">KHÔNG GIAN XANH</span></a>
+                        </li>
+
+                        <li data-image="/360_iframe/thuvien1.jpg">
+                            <a href="#" class="nav_link">
+                            <span class="nav_text">KHU THỂ THAO</span></a>
+                        </li>
+
+                        <li data-image="/360_iframe/sanh_cs1.jpg">
+                            <a href="#" class="nav_link">
+                            <span class="nav_text">SÂN TRƯỜNG</span></a>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav_link">
+                        <i class="fa-solid fa-archway nav_icon_widget"></i>
+                        <span class="nav_text">CÁC CƠ SỞ<i class="fa-solid fa-caret-down nav_icon"></i></span>
+                        </a>
+                        <ul class="sub_menu nav_list">
+                            <li data-image="/360_iframe/cs1.jpg"><a href="#" class="nav_link">
+                                <span class="nav_text">CƠ SỞ 1</span></a>
+                            </li>
+    
+                            <li data-image="/360_iframe/cs2.jpg"><a href="#" class="nav_link">
+                                <span class="nav_text">CƠ SỞ 2</span></a>
+                            </li>
+    
+                            <li data-image="/360_iframe/coso3.webp"><a href="#" class="nav_link">
+                                <span class="nav_text">CƠ SỞ 3</span></a>
+                            </li>
+    
+                        </ul>
+                        </li>
+                </ul>
+            </div>
+         </div>
+    </div>
+    <div id="show_sidebar_button">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div id="image-container">
+        <button id="backButton"> <i class="	fa fa-angle-left"></i>QUAY LẠI</button>
+        <img src="/images/anhbackgroudvirtour.png" alt="" id="image">
+        <i class="fa-solid fa-circle-chevron-left prevButton carousel_icon" onclick="prev()"></i>
+        <i class="fa-solid fa-circle-chevron-right nextButton carousel_icon" onclick="next()"></i>
+    </div>
+</body> 
+</html>

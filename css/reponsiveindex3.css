@@ -1,0 +1,17 @@
+@media(max-width:600px){
+   
+    div.notify-content{
+        display: block !important;
+    }
+    .login-side{
+        display: none;
+        width: 0;
+    }
+    div.topnav > a{
+        display: none;
+    }
+
+    
+   
+    
+}

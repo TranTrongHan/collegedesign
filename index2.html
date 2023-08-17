@@ -4,137 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/headerandfooter.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/reponsive.css">
-    <link rel="stylesheet" href="css/contact-form.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/collegedesign/css/general.css">
+    <link rel="stylesheet" href="/collegedesign/css/contact-form.css">
+    <link rel="stylesheet" href="/collegedesign/css/headerandfooter.css">
 </head>
 <body>
-    <header id="myHeader">
-        <div class="flex head-bar" id="myheadbar">
-            <div class="logo">
-                <img src="images/Logo (1).png" alt="OU"> 
-            </div>
-            <div class="aside-logo flex">
-                <a href="#">Giới thiệu</a>
-                <a href="#">Phòng - cơ sở</a>
-                <a href="#">Khoa - Ban</a>
-                <a href="#">Đào tạo</a>
-                <a href="#">Tuyển sinh</a>
-            </div>
-        </div>
+    <header>
+        
     </header>
-    <section>
-        <div class="form-container">
-            <form >
-                <input type="text" id="name" placeholder="Your name..." >
-                <input type="email" id="email" placeholder="Your email..." required>
-                <input type="text" id="phone" placeholder="Your phone..." >
-                <textarea  id="message" cols="30" rows="10" placeholder="Help...."></textarea>
-                <label for="">You are</label>
-                <select id="cars" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <button class="submit-btn" type="submit">Send</button>
-            </form>
-        </div>
-        <div class="modal-error-container display" id="modalID">
-            <div class="modal-form">
-                <div class="formModal-header">
-                    <div><img src="/collegedesign/images/submit_failed.png" alt=""></div>
-                    <div class="close-tag" style="color: #fff; font-size: 1.5rem;">X</div>
-                </div>
-                <div class="formModal-body">
-                    <h3 style="font-size: 2.5rem;font-weight: 700;color: #1f2251;">Gui that bai</h3>   
-                    <p style="padding-top: 20px;font-size: 1.1rem; color: #2d334d;">Email cannot be empty</p>
+    <section id="form">
+        <div class="contact-form">
+            <div class="text">
+                <h2>Liên hệ để nhận thông tin tư vấn</h2>
+                <div class="info">
+                    <div class="item">
+                        <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+                        <div class="content">  35&ndash;37 Hồ Hảo Hớn, P.Cô Giang, Q1, Tp.HCM  </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="content">  35&ndash;37 Hồ Hảo Hớn, P.Cô Giang, Q1, Tp.HCM  </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="content">  35&ndash;37 Hồ Hảo Hớn, P.Cô Giang, Q1, Tp.HCM  </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="content">  35&ndash;37 Hồ Hảo Hớn, P.Cô Giang, Q1, Tp.HCM  </div>
+                    </div>
                 </div>
             </div>
+            <div class="input-form">
+                <form action="">
+                    <input type="text" placeholder="Họ và tên">
+                    <input id="email" type="email" placeholder="Email">
+                    <input type="" placeholder="Số điện thoại">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ý kiến của bạn"></textarea>
+                    <button type="submit" class="submitBtn" >Gửi</button>
+                </form>
+            </div>
         </div>
-        <div class="modal-succes-container display">
-            <div class="modal-succes-form">
-                    <div class="succes-form-header">
-                        <div class="path"><i class="fa-solid fa-check"></i></div>
-                        <div class="close-tag-2" style="color: #fff; font-size: 1.5rem;">X</div>
-                    </div>
-                    <div class="succes-form-body">
-                        <h3 style="font-size: 2.5rem;font-weight: 700;color: #1f2251;">Gui thanh cong</h3>   
-                        <p style="padding-top: 20px;font-size: 1.1rem; color: #2d334d;">Thông tin của bạn được gửi đi thành công. Chúng tôi sẽ sớm liên hệ bạn</p>
-                    </div>
+        <div class="modal-error hidden">
+            <div class="modal-container ">
+                <div class="modal-header">
+                    <img src="images/submit_failed.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h2>Gửi thất bại</h2>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="footer-container">
             <div class="first-site-container">
-                <div class="first-site flex">
-                    <div class="first-site-col"><a href="#"><img src="images/Logo (1).png" alt=""></a></div>
-                    <div class="first-site-col">
-                        <div class="footer-title">Email</div>
-                        <div class="footer-content"><a href="#mailto:ou@ou.edu.vn"></a>ou@ou.edu.vn</div>
-                    </div>  
-                    <div class="first-site-col">
-                        <div class="footer-title">Điện thoại</div>
-                        <div class="footer-content">028-38364748</div>
-                    </div>
-                    <div class="first-site-col">
-                        <div class="footer-title">Địa chỉ</div>
-                        <div class="footer-content">35 &ndash; 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, TP. HCM</div>
-                    </div>
+                <div class="first-site-col">
+                    <a><img src="images/logoDHMO2SMALL PNG.png" alt=""></a>
+                </div>
+                <div class="first-site-col">
+                    <div class="footer-title">Email</div>
+                    <div class="footer-content"><a href="mailto:ou@ou.edu.vn">ou@ou.edu.vn</a></div>
+                </div>  
+                <div class="first-site-col">
+                    <div class="footer-title">Điện thoại</div>
+                    <div class="footer-content"><a href="tel:0898982526" title="Gọi 028-38364748" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);" id="floating-phone">028-38364748</a></div>
+                    <div class="footer-content"><a href="tel:0898982526" title="Gọi 028-39207639" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);" id="floating-phone">028-39207639</a></div>
+                    <div class="footer-content"><a href="tel:0898982526" title="Gọi 028-39207640" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);" id="floating-phone">028-39207640</a></div>
+                </div>
+                <div class="first-site-col">
+                    <div class="footer-title">Địa chỉ</div>
+                    <div class="footer-content"><a href="https://goo.gl/maps/fZKTBGYV3bn6nhgs9" alt="CS1">97 Võ Văn Tần P. 6, Q. 3 TP. Hồ Chí Minh </a> </div>
+                    <div class="footer-content"><a href="https://goo.gl/maps/C5ArUSNWvKP776su9" alt="CS2">35 &ndash; 37 Hồ Hảo Hớn P. Cô Giang, Q. 1 TP. Hồ Chí Minh</a></div>
+                    <div class="footer-content"><a href="https://goo.gl/maps/cQWeorvUppd8u32y5" alt="CS3">371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh</a></div>
                 </div>
             </div>
             <div class="second-site-container">
-                <div class="second-site flex">
-                    <div class="second-site-col">
-                        <div class="footer-title">Về chúng tôi</div>
-                        <div class="footer-content flex">
-                            <a href="#">Tin tức</a>
-                            <a href="#">Sự kiện</a>
-                            <a href="#">Tuyển dụng</a>
-                        </div>
+                <div class="second-site-col">
+                    <div class="footer-title">Về chúng tôi</div>
+                    <div class="footer-content ">
+                        <a href="#">Tin tức</a>
+                        <a href="#">Sự kiện</a>
+                        <a href="#">Tuyển dụng</a>
                     </div>
-                    <div class="second-site-col">
-                        <div class="footer-title">Truy cập nhanh</div>
-                        <div class="footer-content">
-                         
-                        </div>
+                </div>
+                <div class="second-site-col">
+                    <div class="footer-title">Truy cập nhanh</div>
+                    <div class="footer-content ">
+                        <a href="#">Trang chủ</a>
+                        <a href="https://tienichsv.ou.edu.vn">Tiện ích</a>
+                        <a href="https://lms.ou.edu.vn">Học tập</a>
+                        <a href="https://ou.edu.vn/thu-vien">Thư viện</a>
                     </div>
-                    <div class="second-site-col">
-                        <div class="footer-title">Follow us</div>
-                        <div class="footer-content flex">
-                           <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                           <a href="#"><i class="fa-brands fa-instagram"></i></i>Instagram</a>
-                           <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
-                        </div>
+                </div>
+                <div class="second-site-col">
+                    <div class="footer-title">Follow us</div>
+                    <div class="footer-content ">
+                        <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></i>Instagram</a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a>
                     </div>
-                    <div class="second-site-col">
-                        <div class="footer-title">Các trường và khối nghành đào tạo</div>
-                        <div class="footer-content flex">
-                           <a href="#">Nhân văn</a>
-                           <a href="#">Khoa học xã hội &amp; quản lí </a>
-                           <a href="#">Pháp luật</a>
-                           <a href="#">Khoa học sự sống</a>
-                           <a href="#">Máy tính &amp; công nghệ thông tin</a>
-                        </div>
+                </div>
+                <div class="second-site-col">
+                    <div class="footer-title">Các trường và khối nghành đào tạo</div>
+                    <div class="footer-content ">
+                        <a href="#">Nhân văn</a>
+                        <a href="#">Khoa học xã hội &amp; quản lí </a>
+                        <a href="#">Pháp luật</a>
+                        <a href="#">Khoa học sự sống</a>
+                        <a href="#">Máy tính &amp; công nghệ thông tin</a>
                     </div>
                 </div>
             </div>
+            
             <div class="third-site-container">
-                <div class="third-site flex">
+                <div class="third-site ">
                     <div><span>© 2022 Open University. All rights reserved.</span></div>
-                    <div class="third-site-col flex">
+                    <div class="third-site-col ">
                         <div>Điều khoản</div>
                         <div>Chính sách bảo mật</div>
                         <div>Copyright</div>
                     </div>
                 </div>
             </div>
+
         </div>   
     </footer>
+    
+    <script src="./javascript/index2.js"></script>
+
 </body>
-<script src="./javascript/index2.js"></script>
 </html>

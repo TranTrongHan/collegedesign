@@ -1,51 +1,189 @@
-@media(max-width:500px){
-    div.head-bar{
-        width: 100%;
-        top: 0;
-        min-height: 300px;
-        display: block;
+@media (min-width:1024px)
+{
+    
+    .mobile-navbar{
+        display: none;
     }
-    div.logo{
-        width: 90%;
-        display: block;
+    .head-bar{
+       max-width: fit-content;
     }
-    div.aside-logo{
-        width: 100%;
-        height: fit-content;
-        gap: 0;
-        
+    /* .sub-bar{
+        display: none;
+    } */
+    .slider{
+        height: 400px;
     }
-    div.aside-logo > a{
-        width: 100%;
-        font-size: 1rem;
-        padding: 5px;
+    h1.hero-title{
+        font-size: 3rem;
+
+    }
+    div.hero-content > div{
+        left: unset;
     }
     
+}
+@media screen and (max-width: 768px){
+   
+    .navbar{
+        display: none;
+    }
+    .mobile-navbar{
+     
+        background-color: #0e315e;
+    }
+    .head-bar{
+        display: none !important;
+    }
+    
+    .slider{
+        height: 400px;
+    }
+    .banner{
+        margin-top: 0;
+    }
+    div.first-sec-container{
+        flex-direction: column;
+        justify-content: center ;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    div.hero-container{
+        width: 100%;    
+    }
     h1.hero-title{
-        gap: 15px;
-        display: flex;
-        font-weight: 700;
-        font-size: 30px;
-        color: white;
+        font-size: 3rem;
+        position: static;
+        margin-left: 10px;
     }
-    div.row1{
-        display: block;
-    }
-    div.row1 > h1{
-       font-size: 2.3rem;
+    div.hero-content{
+        width: 100%;
         
     }
-    div.right-row1{
+    div.hero-content > div{
+        position: static !important;
+    }
+    div.hero-content p{
+        font-size: unset;
+        margin-left: 20px;
+        line-height: 2rem;
+        font-weight: unset;
+    }
+    div.row1-left{
+            margin-bottom: 20px;
+    }
+    div.row1-left > p{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    div.row2-thirdsec-container{
+           flex-direction: column;
+           gap: 30px;
+    }
+    div.row2-left{
         width: 100%;
     }
-    div.right-row1 > a{
-        font-size: 1.5rem;
+    div.row2-right-container{
+        width: 100%;
+    }
+    div.row3-thirdsec-container{
+        overflow-x: auto;
+    }
+    div.one_sec_of_row3{
+        width: 250px !important;
+    }
+    
+    div.fourth-sec-container h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    div.edu{
+        flex-direction: column;
+    }
+    div.edu-col1, div.edu-col3, div.edu-col2{
+        width: 90%;
+        margin: auto;
+    }
+    div.fifth-sec-container{
+        display: block;
+    }
+    div.introduction{
+        width: 100%;
+    }
+    div.fifth-sec-body{
+        width: 100%;
+    }
+    .sub-bar{
+        min-height: 0px !important;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .mobile-navbar{
+        padding: 0;
+        background-color: #1455aa;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-navbar-icon{
+        padding: 10px;
+        text-align: center;
+        color: aliceblue;
+    }
+    .mobile-nav-list{
+        display: block;
+    }
+    .icon-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 0;
+    }
+
+    
+    .nav-list-item button{
+        width: 100%;
+    }
+    .nav-list-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .nav-list-content a{
+       color: #fff !important;
+        display: block;
+        text-align: right;
     }
    
-}
-
-@media(min-width:700px){
-    div.head-bar{
-       min-height: 100px;
+    .hidden{
+        display: none;
     }
+    .first-site-container, .second-site-container {
+        flex-direction: column;
+         padding-bottom: 25px;
+        gap: 15px; 
+     }
+     .first-site-col,.second-site-col {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+     }
+     .footer-title {
+         font-size: 1.5rem;
+     }
+     .third-site {   
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+     }
+     .third-site-col {
+         flex-direction: column;
+         align-items: center;
+     }
 }

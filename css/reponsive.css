@@ -1,11 +1,15 @@
-@media (max-width:1100px)
+@media (min-width:1024px)
 {
+    
+    .mobile-navbar{
+        display: none;
+    }
     .head-bar{
        max-width: fit-content;
     }
-    .sub-bar{
+    /* .sub-bar{
         display: none;
-    }
+    } */
     .slider{
         height: 400px;
     }
@@ -19,6 +23,18 @@
     
 }
 @media screen and (max-width: 768px){
+   
+    .navbar{
+        display: none;
+    }
+    .mobile-navbar{
+     
+        background-color: #0e315e;
+    }
+    .head-bar{
+        display: none !important;
+    }
+    
     .slider{
         height: 400px;
     }
@@ -75,9 +91,7 @@
     div.one_sec_of_row3{
         width: 250px !important;
     }
-    div.fourth-sec-container{
-        
-    }
+    
     div.fourth-sec-container h1{
         text-align: center;
         font-size: 3rem;
@@ -90,6 +104,86 @@
     div.edu-col1, div.edu-col3, div.edu-col2{
         width: 90%;
         margin: auto;
-        
     }
+    div.fifth-sec-container{
+        display: block;
+    }
+    div.introduction{
+        width: 100%;
+    }
+    div.fifth-sec-body{
+        width: 100%;
+    }
+    .sub-bar{
+        min-height: 0px !important;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .mobile-navbar{
+        padding: 0;
+        background-color: #1455aa;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-navbar-icon{
+        padding: 10px;
+        text-align: center;
+        color: aliceblue;
+    }
+    .mobile-nav-list{
+        display: block;
+    }
+    .icon-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 0;
+    }
+
+    
+    .nav-list-item button{
+        width: 100%;
+    }
+    .nav-list-content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .nav-list-content a{
+       color: #fff !important;
+        display: block;
+        text-align: right;
+    }
+   
+    .hidden{
+        display: none;
+    }
+    .first-site-container, .second-site-container {
+        flex-direction: column;
+         padding-bottom: 25px;
+        gap: 15px; 
+     }
+     .first-site-col,.second-site-col {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+     }
+     .footer-title {
+         font-size: 1.5rem;
+     }
+     .third-site {   
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+     }
+     .third-site-col {
+         flex-direction: column;
+         align-items: center;
+     }
 }

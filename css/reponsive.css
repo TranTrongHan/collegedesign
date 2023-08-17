@@ -91,19 +91,23 @@
     div.one_sec_of_row3{
         width: 250px !important;
     }
-    
-    div.fourth-sec-container h1{
+    .fourth-sec-container h1 {
         text-align: center;
-        font-size: 3rem;
-        font-weight: 500;
-        margin-bottom: 20px;
     }
-    div.edu{
-        flex-direction: column;
+    .edu {
+       max-height: none;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
     }
-    div.edu-col1, div.edu-col3, div.edu-col2{
-        width: 90%;
-        margin: auto;
+    .edu-col1, .edu-col3, .edu-col2 {
+       width: 100%;
+    }
+    .fourth-sec-container div > img {
+        height: 100px;
+        max-height: 200px;
+        object-fit: contain;
     }
     div.fifth-sec-container{
         display: block;

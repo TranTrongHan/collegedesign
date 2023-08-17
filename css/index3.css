@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body, html {
+    /* background-color: yellow; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.l_navbar{
+    top:0;
+    left:0;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    padding: 1.25rem 0.5rem 2rem;
+    background-color: gainsboro;
+    display: none;
+}
+.nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0rem 0.5rem;
+}
+.nav_logo_icon{
+    width: 3rem;
+}
+.nav_logo_text{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+}
+.nav_toggle{
+    position: absolute;
+    top: 1.1rem;
+    right:-0.5rem;
+    background-color: lightblue;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor:pointer;
+    transition: 0.5s;
+    align-items: center;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    position: relative;
+}
+.nav_icon{
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1rem;
+}
+.nav_icon_widget{
+    margin-right: 1.5rem;
+}
+.nav_link:hover{
+    background-color: lightgreen;
+}
+.nav_text{
+    font-weight: 700;
+}
+#show_sidebar_button {
+    position: fixed;
+    top: 1.5rem;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    cursor: pointer;
+    border-bottom-right-radius: 30%;
+    background-color: aqua;
+    /* display: h; */
+    padding: 0.5rem;
+}
+.fa-bars{
+    align-items: center;
+    font-size: 3rem;
+}
+.icon{
+    width: 5%;
+}
+
+.sub_menu{
+ /* Ẩn Menu con */
+    display: none;
+}
+
+
+ /* FULL images */
+ #image-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 3;
+}
+
+#image-container img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; Điều chỉnh thuộc tính này để tùy chỉnh hiển thị của ảnh */
+}
+#backButton{
+    position: absolute;
+    overflow: hidden;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    background-color: #add8e6;
+    cursor: pointer;
+    color: black;
+    left: 20px;
+    top: 20px;
+}
+.fa-angle-left{
+    font-size: 1rem;
+    position: absolute;
+    left: 10%;
+}
+.carousel_icon{
+    position: absolute;
+    bottom: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 3rem;
+}
+.prevButton{
+    left: 2%;
+}
+.nextButton{
+    right: 2%;
+}

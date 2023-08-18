@@ -176,9 +176,9 @@ div.mobile-navbar  ul > li{
     padding-bottom: 15px;
 }
 .first-site-col img{
-    width: 150px;
-    object-fit: cover;
-    
+    width: fit-content;
+    object-fit: contain;
+
 }
 .footer-title{
     color: #fff;

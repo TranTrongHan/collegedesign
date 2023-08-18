@@ -1,6 +1,4 @@
-section#form{
-  
-}
+
 .contact-form{
     background-color: #1f2251;
     padding: 15px 10px;
@@ -68,13 +66,23 @@ section#form{
 }
 /* MODAL */
 .modal-error{
+    position: fixed;
     padding: 50px;  
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   
     background-color: rgba(132,137,159,0.8);
+    
 }
 .modal-container{
-    /* width: 800px; */
+    position: relative;
+    top: -500px;
     margin: auto;
     box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    transition: all 0.5s;
 }
 .modal-header{
     background-color: #d72134;
@@ -86,6 +94,14 @@ section#form{
 .modal-header img{
     width: 200px;
     height: 150px;
+}
+.close{
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
 }
 .modal-body{
     background-color: #fff;

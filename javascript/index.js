@@ -49,7 +49,6 @@ function eventHandler(){
     for(let i = 0; i< navListItems.length; i++) {
         let btn = navListItems[i].querySelector('.sub-nav-btn');
         let navListContent = navListItems[i].querySelector('.nav-list-content');
-        console.log(navListContent)
         btn.onclick=function(){
             if(navListContent.classList.contains('hidden')) {
                 navListContent.classList.remove('hidden');

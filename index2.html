@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/collegedesign/css/index2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/collegedesign/css/general.css">
     <link rel="stylesheet" href="/collegedesign/css/contact-form.css">
     <link rel="stylesheet" href="/collegedesign/css/headerandfooter.css">
 </head>
 <body>
-    <header>
-        
+    <header id="myHeader">
+        <div class="head-bar" id="myheadbar">
+            <div class="logo">
+                <img src="images/Logo (1).png" alt="OU"> 
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Tìm kiếm...">
+                <button class="search-button">Tìm kiếm</button>
+              </div>
+        </div>
     </header>
+    <div id="modalError" class="modal-error hidden">
+        <div class="modal-container ">
+            <div class="modal-header">
+                <img src="images/submit_failed.png" alt="">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2>Gửi thất bại</h2>
+            </div>
+        </div>
+    </div>
     <section id="form">
-        <div class="contact-form">
+        <div class="contact-form">  
             <div class="text">
                 <h2>Liên hệ để nhận thông tin tư vấn</h2>
                 <div class="info">
@@ -37,7 +57,7 @@
                 </div>
             </div>
             <div class="input-form">
-                <form action="">
+                <form id="myForm" action="">
                     <input type="text" placeholder="Họ và tên">
                     <input id="email" type="email" placeholder="Email">
                     <input type="" placeholder="Số điện thoại">
@@ -46,13 +66,136 @@
                 </form>
             </div>
         </div>
-        <div class="modal-error hidden">
-            <div class="modal-container ">
-                <div class="modal-header">
-                    <img src="images/submit_failed.png" alt="">
-                </div>
-                <div class="modal-body">
-                    <h2>Gửi thất bại</h2>
+      
+    </section>
+    
+    <section>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Thông tin liên hệ</h1>
+            </div>
+            <div class="contact-body">
+                <div class="info-items">
+                    <div class="info-item">
+                        <div>
+                            <div class="info-content">PHÒNG TUYỂN SINH VÀ TRUYỀN THÔNG</div>
+                            <div class="more-info-button ">
+                                <button class="more">+</button>
+                            </div>
+                            <div class="hide-button hidden">
+                                <button class="hide">-</button>
+                            </div>
+                        </div>
+
+                        <div class="more-info-content hidden">
+                            <div>
+                                <span>
+                                    <strong>Trưởng phòng:</strong> ThS. Nguyễn Thị Mến</span>
+                                </span>
+                            </div>
+                            <div class="contact-line">
+                                <div><i class="fa-solid fa-phone"></i>0123456789</div>
+                                <div><i class="fa-solid fa-envelope"></i>ou@ou.edu.vn</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <div class="info-content">PHÒNG TUYỂN SINH VÀ TRUYỀN THÔNG</div>
+                            <div class="more-info-button ">
+                                <button class="more">+</button>
+                            </div>
+                            <div class="hide-button hidden">
+                                <button class="hide">-</button>
+                            </div>
+                        </div>
+
+                        <div class="more-info-content hidden">
+                            <div>
+                                <span>
+                                    <strong>Trưởng phòng:</strong> ThS. Nguyễn Thị Mến</span>
+                                </span>
+                            </div>
+                            <div class="contact-line">
+                                <div><i class="fa-solid fa-phone"></i>0123456789</div>
+                                <div><i class="fa-solid fa-envelope"></i>ou@ou.edu.vn</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <div class="info-content">PHÒNG TUYỂN SINH VÀ TRUYỀN THÔNG</div>
+                            <div class="more-info-button ">
+                                <button class="more">+</button>
+                            </div>
+                            <div class="hide-button hidden">
+                                <button class="hide">-</button>
+                            </div>
+                        </div>
+
+                        <div class="more-info-content hidden">
+                            <div>
+                                <span>
+                                    <strong>Trưởng phòng:</strong> ThS. Nguyễn Thị Mến</span>
+                                </span>
+                            </div>
+                            <div class="contact-line">
+                                <div><i class="fa-solid fa-phone"></i>0123456789</div>
+                                <div><i class="fa-solid fa-envelope"></i>ou@ou.edu.vn</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <div class="info-content">PHÒNG TUYỂN SINH VÀ TRUYỀN THÔNG</div>
+                            <div class="more-info-button ">
+                                <button class="more">+</button>
+                            </div>
+                            <div class="hide-button hidden">
+                                <button class="hide">-</button>
+                            </div>
+                        </div>
+
+                        <div class="more-info-content hidden">
+                            <div>
+                                <span>
+                                    <strong>Trưởng phòng:</strong> ThS. Nguyễn Thị Mến</span>
+                                </span>
+                            </div>
+                            <div class="contact-line">
+                                <div><i class="fa-solid fa-phone"></i>0123456789</div>
+                                <div><i class="fa-solid fa-envelope"></i>ou@ou.edu.vn</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="info-item">
+                        <div>
+                            <div class="info-content">PHÒNG TUYỂN SINH VÀ TRUYỀN THÔNG</div>
+                            <div class="more-info-button ">
+                                <button class="more">+</button>
+                            </div>
+                            <div class="hide-button hidden">
+                                <button class="hide">-</button>
+                            </div>
+                        </div>
+
+                        <div class="more-info-content hidden">
+                            <div>
+                                <span>
+                                    <strong>Trưởng phòng:</strong> ThS. Nguyễn Thị Mến</span>
+                                </span>
+                            </div>
+                            <div class="contact-line">
+                                <div><i class="fa-solid fa-phone"></i>0123456789</div>
+                                <div><i class="fa-solid fa-envelope"></i>ou@ou.edu.vn</div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,7 +204,7 @@
         <div class="footer-container">
             <div class="first-site-container">
                 <div class="first-site-col">
-                    <a><img src="images/logoDHMO2SMALL PNG.png" alt=""></a>
+                    <a><img src="/collegedesign/images/Logo (1).png" alt=""></a>
                 </div>
                 <div class="first-site-col">
                     <div class="footer-title">Email</div>

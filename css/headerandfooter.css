@@ -43,22 +43,65 @@ div.logo img{
     transform: scale(1.05);
 }
   
-  .search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px 15px;
-    border: none;
-    background-color: #86a5ce;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .search-button:hover {
+.search-button {
+position: absolute;
+top: 0;
+right: 0;
+padding: 10px 15px;
+border: none;
+background-color: #86a5ce;
+color: white;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.search-button:hover {
     background-color: #273f5f;
-  }
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-bar{
+    width: 100%;
+}
+
+.head-bar div.logo{
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.head-bar .header-right{
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.head-bar .header-right div.authen-container{
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.5em 0.2em #273f5f;
+}
+.head-bar .header-right div.authen-container .authen{
+    padding: 0.5rem 1rem;
+}
+
+.head-bar .header-right div.authen-container a{
+    color: #c2c2c2;
+    font-weight: 500;
+}
+.head-bar .header-right div.authen-container:hover a{
+    color: white;
+    font-weight: 600;
+}
+.head-bar .header-right div.authen-container:hover{
+    background-color: #273f5f;
+}
+
+
+  
 div.sub-bar{
     min-height: 30%;
     max-height: fit-content;
